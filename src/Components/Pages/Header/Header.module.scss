@@ -1,0 +1,55 @@
+.headerMainSection {
+    width: 90vw;
+    margin: 0 auto;
+    z-index: 1;
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+
+    
+
+    .navLink {
+        color: #ffffff !important;
+        margin: 0 1rem;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        padding-bottom: 0 !important;
+    }
+
+    // box-shadow: 0px 3px 8px rgb(0 0 0 / 15%);
+    .brandSection {
+
+
+        .responsiveimg {
+            width: 11rem;
+            object-fit: cover;
+        }
+    }
+
+    // .mobileMenuBtnSection {
+    //     display: none;
+
+    //     @media screen and (max-width: 768px) {
+
+    //         display: var(--flex_display);
+
+    //         .mobileMenuOpen {
+    //             border: none;
+
+    //             &:focus {
+    //                 box-shadow: unset;
+    //             }
+    //         }
+    //     }
+
+    // }
+    .bodySection {
+
+        align-items: center;
+        .headerNavLink {
+            font-size: 1.2rem;
+        }
+        .iconSection {
+            font-size: 1.6rem;
+        }
+    }
+}

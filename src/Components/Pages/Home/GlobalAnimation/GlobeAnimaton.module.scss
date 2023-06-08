@@ -1,0 +1,23 @@
+.container {
+  // width: 60rem;
+  width: 55rem;
+  // height: 30rem;
+  /* background-color: red; */
+  // position: fixed;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 3rem;
+  bottom: 0;
+  margin: auto;
+  // z-index: -1;
+
+  @media screen and (max-width: 767px) {
+    width: 100vw;
+    height: 100vw;
+  }
+
+  @media screen and (max-width: 1366px) {
+    width: 45rem;
+  }
+}

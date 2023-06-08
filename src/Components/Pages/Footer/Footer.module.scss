@@ -1,0 +1,62 @@
+.footerMainSection {
+    background: #131516;
+    position: sticky;
+
+    .footerSection {
+        width: 100%;
+        display: flex;
+        padding: 8rem 0 4rem;
+        justify-content: space-evenly;
+
+        .footerContent {
+            // background-color: black;
+            // text-align: left;
+            color: #FCFCFC;
+
+
+            .footerInfo {
+                display: flex;
+
+                .icon {
+                    font-size: 1.3rem;
+                    padding-right: 1rem;
+                }
+
+            }
+
+            .footerHeader {
+                font-weight: 400;
+                font-size: 2.528rem;
+            }
+
+            .socialIcon {
+                font-size: 1.7rem;
+                padding-right: 2rem;
+                color: #dddddd;
+            }
+
+            .quicklinksHeading,
+            .connectWithUs {
+                font-weight: 400;
+                font-size: 30px;
+            }
+
+            .textContent {
+                font-weight: 300;
+                font-size: 1.375rem;
+                color: #dddddd;
+            }
+
+            .connectWithUs {
+                color: #84E2ED;
+            }
+        }
+    }
+
+    .footerCopyright {
+        background: #4C4B50;
+        text-align: center;
+        padding: 1rem 0;
+        color: #fff;
+    }
+}
