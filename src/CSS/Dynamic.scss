@@ -23,32 +23,32 @@ body[data-aos-duration="400"] [data-aos] {
 
 
 
-.root.typing-slash {
-  width: 100%;
-  max-width: 95vw;
-  margin: 0 auto;
-  padding: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+// .root.typing-slash {
+//   width: 100%;
+//   max-width: 95vw;
+//   margin: 0 auto;
+//   padding: 24px;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+// }
 
-.inner.typing-slash {
-  position: relative;
-  padding: 16px 0;
-}
+// .inner.typing-slash {
+//   position: relative;
+//   padding: 16px 0;
+// }
 
-.font-slash-animation.typing-slash {
-  font-size: max(24px, min(6vw, 88px));
-  font-weight: 700;
-  line-height: 1.05;
-  letter-spacing: -0.022em;
-}
+// .font-slash-animation.typing-slash {
+//   font-size: max(24px, min(6vw, 88px));
+//   font-weight: 700;
+//   line-height: 1.05;
+//   letter-spacing: -0.022em;
+// }
 
-.hidden.typing-slash {
-  opacity: 0;
-  padding: 0 8px;
-}
+// .hidden.typing-slash {
+//   opacity: 0;
+//   padding: 0 8px;
+// }
 
 .dots.typing-slash {
   color: hsl(226deg 57% 18% / 0.5);

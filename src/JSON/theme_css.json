@@ -4,7 +4,7 @@
         "sec_fontfamily": "Roboto Mono"
     },
     "imageSection": {
-        "mainlogo": "spectralogic-1.jpeg"
+        "mainlogo": "spectra-global-logo.png"
         
     },
     "homeIcons":{
@@ -32,12 +32,12 @@
     "ourServicesImg":{
         "ourserv_spectra_img":"our-services.jpeg",
         "ourserv_fundadvisory_img": "fund-advisory.jpeg",
-        "ourserv_investment_img": "investment-planning.jpg",
-        "ourserv_portfolio_img": "portfolio-managment.jpg",
-        "ourserv_payChart_img": "pay-chart.jpg",
-        "ourserv_riskmanagement_img": "risk-management.jpg",
-        "ourserv_performancerep_img": "performance-reporting.jpg",
-        "ourserv_balancing_img": "balancing.jpg"
+        "ourserv_investment_img": "investment-planning.png",
+        "ourserv_portfolio_img": "portfolio-managment.png",
+        "ourserv_payChart_img": "pay-chart.png",
+        "ourserv_riskmanagement_img": "risk-management.png",
+        "ourserv_performancerep_img": "performance-reporting.png",
+        "ourserv_balancing_img": "balancing.png"
 
     },
     "ourTeamSection":{

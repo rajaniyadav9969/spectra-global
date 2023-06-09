@@ -236,7 +236,8 @@ const Home = () => {
             <p
               className={homeStyle.wouldYouLinkContent}
               data-aos="fade-right"
-              data-aos-delay="500"
+              data-aos-duration="100"
+              data-aos-delay="50"
             >
               Would you like to
               know more?
@@ -246,7 +247,8 @@ const Home = () => {
               to='contact-us'
               className={homeStyle.ContectCircle}
               data-aos="fade-left"
-              data-aos-delay="500"
+              data-aos-duration="100"
+              data-aos-delay="50"
             >
               <h4 className={homeStyle.wouldcircle}>Contact</h4>
             </Link>

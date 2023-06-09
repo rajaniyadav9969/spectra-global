@@ -6,15 +6,19 @@ const AboutUs = () => {
     const { aboutImgSection } = theme
     return (
         <div className={abStyle.aboutMainSection}>
+            <div>
+
+                <h1 className={abStyle.aboutUsMainHeading}
+                    data-aos="fade-down"
+                    data-aos-delay="50"
+                    data-aos-duration="500"
+
+                >
+                    About Us</h1>
+            </div>
             <div className={`row ${abStyle.welcomeToSpectra}`}>
                 <div className={`col-md-7 ${abStyle.welcmContent}`}>
-                    <h1 className={abStyle.aboutUsMainHeading}
-                        data-aos="fade-down"
-                        data-aos-delay="50"
-                        data-aos-duration="500"
 
-                    >
-                        About Us</h1>
                     <div
                         data-aos="fade-up"
                         data-aos-duration="2000"
@@ -28,11 +32,11 @@ const AboutUs = () => {
                     </div>
                 </div>
                 <div
-                 className={`col-md-5 ${abStyle.welcmImg}`}
-                 data-aos="zoom-in"
-                 data-aos-duration="500"
-                        data-aos-delay="50"
-                 >
+                    className={`col-md-5 ${abStyle.welcmImg}`}
+                    data-aos="zoom-in"
+                    data-aos-duration="500"
+                    data-aos-delay="50"
+                >
                     <img
                         src={require(`../../../Assets/Img/${aboutImgSection.about_spectra_img}`)}
                         alt="welcomeimg"

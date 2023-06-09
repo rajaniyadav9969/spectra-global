@@ -47,6 +47,8 @@ const Header = () => {
     dispatch(SetMenuItemAction(temp))
   }, [])
   return (
+    <div className={headerStyle.navBarSection}>
+
       <Navbar expand="lg" collapseOnSelect className={headerStyle.headerMainSection}>
         <Container fluid>
           <Navbar.Brand as={Link} to="/" className={headerStyle.brandSection}>
@@ -120,6 +122,7 @@ const Header = () => {
           </Navbar.Offcanvas>
         </Container>
       </Navbar>
+    </div>
   )
 }
 
