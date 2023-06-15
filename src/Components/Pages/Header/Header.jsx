@@ -1,25 +1,17 @@
 import React, { useCallback, useEffect, useState } from 'react'
-import { Button, Container, Nav, Navbar, NavDropdown, Offcanvas } from 'react-bootstrap';
+import { Container, Nav, Navbar, Offcanvas } from 'react-bootstrap';
 import headerStyle from './Header.module.scss'
 import theme from '../../../JSON/theme_css.json'
-import { Link, NavLink, useNavigate } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { SetMenuItemAction } from '../../Redux/SpectraAction';
 import { useDispatch } from 'react-redux';
-import { BiSearch } from 'react-icons/bi'
-import { SlSocialTwitter } from "react-icons/sl";
-import { CiLinkedin } from "react-icons/ci";
-import { TiSocialFacebookCircular } from "react-icons/ti";
-import { AiOutlineYoutube } from "react-icons/ai";
-import { BsFacebook, BsLinkedin, BsTwitter, BsYoutube } from 'react-icons/bs';
 
 
 const Header = () => {
   const { imageSection } = theme
   const [dataitems, setdataitems] = useState([])
   const dispatch = useDispatch()
-
-
-
+  const [showOffcanvas, setShowOffcanvas] = useState(false);
   useEffect(() => {
     let temp = [
       {
@@ -34,10 +26,10 @@ const Header = () => {
         title: 'Our Services',
         href: 'our-services',
       },
-      {
-        title: 'Our Team',
-        href: 'our-team',
-      },
+      // {
+      //   title: 'Our Team',
+      //   href: 'our-team',
+      // },
       {
         title: 'Contact Us',
         href: 'contact-us',
@@ -46,6 +38,10 @@ const Header = () => {
     setdataitems(temp)
     dispatch(SetMenuItemAction(temp))
   }, [])
+
+  const handleNavLinkClick = useCallback(() => {
+    setShowOffcanvas(false); // Close the offcanvas menu
+  }, []);
   return (
     <div className={headerStyle.navBarSection}>
 
@@ -58,15 +54,21 @@ const Header = () => {
               className={headerStyle.responsiveimg}
             />
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="offcanvasNavbar-expand-lg" />
+          <Navbar.Toggle onClick={() => setShowOffcanvas((prevShow) => !prevShow)} aria-controls="offcanvasNavbar-expand-lg" className={headerStyle.menubtn} />
           <Navbar.Offcanvas
             id="offcanvasNavbar-expand-lg"
             aria-labelledby="offcanvasNavbarLabel-expand-lg"
             placement="end"
+            show={showOffcanvas}
+            onHide={() => setShowOffcanvas(false)} 
+            className={headerStyle.offCanvasNavbar}
           >
-            <Offcanvas.Header closeButton>
+            <Offcanvas.Header
+              closeButton
+              className={headerStyle.mobileMenuSection}
+            >
               <Offcanvas.Title id="offcanvasNavbarLabel-expand-lg">
-                Offcanvas
+
               </Offcanvas.Title>
             </Offcanvas.Header>
             <Offcanvas.Body className={headerStyle.bodySection}>
@@ -75,13 +77,13 @@ const Header = () => {
                   return (
                     <div key={index} className={`header-nav-link ${headerStyle.headerNavLink}`}>
                       {
-                        <NavLink to={item.href} className={`nav-link ${headerStyle.navLink}`}>{item.title}</NavLink>
+                        <NavLink to={item.href} onClick={handleNavLinkClick} className={`nav-link ${headerStyle.navLink}`}>{item.title}</NavLink>
                       }
                     </div>
                   )
                 })}
               </Nav>
-              <Nav className={`justify-content-end flex-grow-1 pe-3 ${headerStyle.iconSection}`}>
+              {/* <Nav className={`justify-content-end flex-grow-1 pe-3 ${headerStyle.iconSection}`}>
                 <div className={`nav-link ${headerStyle.navLink}`}>
                   <span>
                     <BiSearch />
@@ -108,7 +110,7 @@ const Header = () => {
                   </span>
                 </NavLink>
 
-              </Nav>
+              </Nav> */}
               {/* <Form className="d-flex">
                 <Form.Control
                   type="search"

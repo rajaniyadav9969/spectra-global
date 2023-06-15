@@ -13,6 +13,7 @@ import './CSS/Dynamic.scss';
 import { Footer } from './Components/Pages/Footer';
 import { OurTeam } from './Components/Pages/OurTeam';
 import ContactUs from './Components/Pages/ContactUs/ContactUs';
+import { ScrollToTop } from './Components/ScrollToTop';
 
 function App() {
   var root = document.documentElement
@@ -43,6 +44,7 @@ function App() {
   return (
     <div className="App">
       <Header/>
+      <ScrollToTop>
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/about-us" element={<AboutUs/>}/>
@@ -50,6 +52,7 @@ function App() {
         <Route path="/our-team" element={<OurTeam/>}/>
         <Route path="/contact-us" element={<ContactUs/>}/>
       </Routes>
+      </ScrollToTop>
       <Footer/>
     </div>
   );

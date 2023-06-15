@@ -1,10 +1,14 @@
 .homeSection {
-    background: #131516;
+    background: #010110;
 
     .homeTopSection {
         // position: relative;
         // height: 93vh;
         height: 82vh;
+
+        @media screen and (max-width: 768px) {
+            height: auto;
+        }
 
         // .gradient {
 
@@ -17,34 +21,15 @@
         //     background: #131516;
         //     z-index: -1;
         // }
-
-        .bgSection {
-            // position: absolute;
-            position: absolute;
-            left: 0;
-            // right: 0;
-            // top: 0;
+        .tsParticles {
+            height: 100vh;
+            position: fixed;
             top: 0;
             width: 100%;
-            z-index: -1;
-            // height: 100%;
-            // background-image: url('../../../Assets/Img/pexels-pixabay-220067.jpg');
-
         }
 
-        .globalContent {
-            // position: absolute;
-            // font-size: 5rem;
-            // top: 50%;
-            // width: 100%;
-            // text-align: center;
-            // margin: 0 auto;
-            // display: flex;
-            // justify-content: center;
-            // align-items: center;
-            // height: 100%;
-            // // width: 50%;
 
+        .globalContent {
             margin: 0 auto;
             display: flex;
             justify-content: center;
@@ -53,21 +38,13 @@
             // height: 89%;
             z-index: 5;
             color: #fafafa;
-
-            // .globalInvestment {
-            //     position: relative;
-            //     font-size: 4.5rem;
-            //     color: #fff;
-            // }
-
-            // .areYouTired {
-            //     text-align: center;
-
-            // .globalInvestment,
-            // .repetitive {
-            //     color: #fafafa;
-            // }
-
+            @media screen and (max-width: 768px) {
+                height: 49vh;
+                width: 92vw;
+            }
+            // @media screen and (max-width: 1280px){ 
+            //     width: 49vw;
+            //   }
             .globalInvestment {
                 animation: text1;
             }
@@ -92,27 +69,20 @@
                 white-space: nowrap;
                 display: inline-flex;
                 position: relative;
-                animation-duration: 17s;
+                animation-duration: 6s;
                 animation-timing-function: steps(20, end);
                 animation-iteration-count: infinite;
                 font-size: 4.4rem;
-                // font-weight: bold;
-
-                // padding-left: 5px;
-                // &::after {
+                // &::after{
                 //     content: "/";
-                //     position: absolute;
-                //     right: 0;
-                //     // animation: caret infinite;
-                //     animation-duration: 8s;
-                //     animation-timing-function: steps(1, end);
-                //     color: rgb(235, 22, 22);
-                //     font-size: 5.4rem;
-                //     bottom: -1rem;
                 // }
+                @media screen and (max-width: 768px) {
+                    font-size: 2rem;
+                }
+                // @media screen and (max-width: 1280px){ 
+                //    font-size: 3.6rem;
+                //   }
             }
-
-            // }
 
             @keyframes text1 {
 
@@ -125,7 +95,8 @@
                 10%,
                 40% {
                     // width: 17em;
-                    width: 48rem;
+                    width: 45rem;
+                    // margin: 0 auto;
                 }
             }
 
@@ -140,7 +111,7 @@
                 60%,
                 90% {
                     // width: 21.2em;
-                    width: 48rem;
+                    width: 45rem;
                     // display: inline-flex;
                 }
             }
@@ -198,6 +169,13 @@
             padding-top: 6rem;
             padding-bottom: 4rem;
 
+            @media screen and (max-width: 768px) {
+                padding-top: 0;
+                display: block;
+                padding-bottom: 3rem;
+            }
+
+
             .card {
                 // background-color: red;
                 position: relative;
@@ -206,6 +184,10 @@
                 margin: 1rem;
                 height: 18.469rem;
 
+                @media screen and (max-width: 768px) {
+                    width: auto;
+                }
+
                 .cardtext {
                     text-align: center;
                     display: flex;
@@ -213,8 +195,12 @@
                     align-items: center;
                     height: 100%;
                     padding: 3rem;
-                    font-size: 1.375rem;
+                    font-size: 1.2rem;
                     color: white;
+
+                    @media screen and (max-width: 768px) {
+                        font-size: 1rem;
+                    }
 
                 }
 
@@ -225,7 +211,10 @@
             .card2 {
                 border-left: 2px rgb(31, 114, 156) solid;
                 border-right: 2px rgb(31, 114, 156) solid;
-                background: #131516;
+                background: #010110;
+                @media screen and (max-width:768px) {
+                    margin-bottom: 1.5rem;
+                }
             }
 
             .card1,
@@ -238,6 +227,11 @@
                 border-top: 2px rgb(31, 114, 156) solid;
                 border-image: linear-gradient(to top, #131516, rgb(31, 114, 156)) 1;
 
+                @media screen and (max-width:768px) {
+                    border-top: none;
+                    border-bottom: 2px rgb(31, 114, 156) solid;
+                    border-image: linear-gradient(to bottom, #131516, rgb(31, 114, 156)) 1;
+                }
             }
 
             // .card3{
@@ -258,6 +252,10 @@
                     width: 100%;
                     // z-index: -1;
                     height: 100%;
+
+                    @media screen and (max-width:768px) {
+                        display: none;
+                    }
                 }
 
                 .aboutContent {
@@ -267,18 +265,35 @@
                     left: 0;
                     right: 0;
                     text-align: center;
+
                     // bottom: 20%;
+                    @media screen and (max-width: 1280px) {
+                        max-width: 60%;
+                    }
+
+                    @media screen and (max-width: 768px) {
+                        max-width: 90%;
+                        position: unset;
+                        color: #fff;
+                    }
 
                     .aboutHeading {
                         font-size: 5rem;
                         margin-bottom: 2rem;
                         text-shadow: 1px 3px 4px rgba(111, 105, 105, 0.7019607843);
                         font-weight: 500;
+                        @media screen and (max-width: 768px) {
+                            font-size: 4rem;
+                        }
                     }
 
                     .aboutContentInfo {
                         text-align: justify;
-                        font-size: 1.375rem;
+                        font-size: 1.2rem;
+
+                        @media screen and (max-width: 768px) {
+                            font-size: 1rem;
+                        }
                     }
                 }
             }
@@ -286,20 +301,31 @@
 
         .whoweAreSection {
             padding-top: 5rem;
-            padding-bottom: 5rem;
+            // padding-bottom: 5rem;
+            margin-bottom: 1.6rem;
 
+            @media screen and (max-width: 768px) {
+               padding-top: 2rem;
+            }
             .whoweAreHeader {
                 text-align: center;
                 margin-bottom: 2rem;
                 font-weight: 500;
                 color: #1F729C;
                 font-size: 5rem;
+                @media screen and (max-width: 768px) {
+                    font-size: 4rem;
+                 }
             }
 
             .rowof3,
             .rowof1 {
                 display: flex;
                 justify-content: center;
+
+                @media screen and (max-width: 768px) {
+                    display: block;
+                }
             }
 
             // .rowof1 {
@@ -323,6 +349,9 @@
                 //     // border-radius: 50%;
                 //     // background-color: #D9D9D9;
                 // }
+                @media screen and (max-width: 768px) {
+                    width: auto;
+                }
 
                 p {
                     // font-weight: 400;

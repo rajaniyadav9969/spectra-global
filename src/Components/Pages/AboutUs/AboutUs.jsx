@@ -7,7 +7,6 @@ const AboutUs = () => {
     return (
         <div className={abStyle.aboutMainSection}>
             <div>
-
                 <h1 className={abStyle.aboutUsMainHeading}
                     data-aos="fade-down"
                     data-aos-delay="50"

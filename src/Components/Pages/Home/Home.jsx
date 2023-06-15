@@ -13,48 +13,34 @@ import theme from '../../../JSON/theme_css.json'
 const Home = () => {
   const { homeIcons } = theme
 
-  const [readMore, setReadMore] = useState(false);
   const particlesInit = useCallback(async (engine) => {
-    console.log(engine);
+    // console.log(engine);
     await loadFull(engine);
   }, []);
 
-  
+
   return (
     <div>
       <div className={homeStyle.homeSection}>
         <div className={homeStyle.homeTopSection}>
           <Particles
             id="tsparticles"
+            className={homeStyle.tsParticles}
             init={particlesInit}
             // loaded={particlesLoaded}
             options={particlesConfig}
           />
-          {/* <div className={`videoTag ${homeStyle.bgSection}`}>
-            <img src={sample} alt="sample" style={{ height: "100vh", width: "100%" }} />
-          </div> */}
-          {/* <div className={homeStyle.gradient}></div> */}
           <GlobeAnimaton />
-          {/* <video
-            className={`videoTag ${homeStyle.bgSection}`}
-            // className='videoTag'
-            autoPlay loop muted>
-            <source className={homeStyle.bgSection1} src={sample} type='video/mp4' />
-          </video> */}
 
           <div className={homeStyle.globalContent}>
-            <div>
+            {/* <div> */}
               <p className={homeStyle.globalInvestment}>GLOBAL INVESTMENT <br />PLATFORM</p>
               <p className={homeStyle.repetitive}>100+ MAN YEARS OF <br />ASSET MANAGEMENT <br />EXPERIENCE</p>
               {/* <p className={homeStyle.bespokeAndCurates}>BESPOKE AND CURATED INVESTMENT SOLUTION</p>
                 <p className={homeStyle.robustCompliance}>ROBUST COMPLIANCE AND GOVERNANCE STATNDARDS</p>  */}
 
             </div>
-          </div>
-          {/* <span className={homeStyle.investment}>GLOBAL INVESTMENT PLATFORM</span>
-                <span className={homeStyle.assetManagement}>  100+ MAN YEARS OF ASSET MANAGEMENT EXPERIENCE</span>
-                <span className={homeStyle.bespokeAndCurates}>BESPOKE AND CURATED INVESTMENT SOLUTION</span>
-                <span className={homeStyle.robustCompliance}>ROBUST COMPLIANCE AND GOVERNANCE STATNDARDS</span> */}
+          {/* </div> */}
         </div>
         {/* <div className={homeStyle.gradient1}></div> */}
         <div className={homeStyle.spectraInfo}>
@@ -97,10 +83,18 @@ const Home = () => {
                   data-aos="zoom-in-up"
                   data-aos-duration="2000"
                 >
-                  <p className={homeStyle.aboutContentInfo}>Welcome to Spectra Global pvt Ltd, where our primary goal is to help clients grow and preserve their wealth while effectively managing their financial affairs.</p>
-                  <p className={homeStyle.aboutContentInfo}>Our financial prosperity is the cornerstone of your future success. With experience in the financial industry, our team of experts is dedicated to providing tailored financial solutions that align with your individual/institutional needs and goals.  </p>
-                  <p className={homeStyle.aboutContentInfo}>At Spectra Global, our primary objective is to preserve and grow the wealth. we understand that each financial journey is unique, which is why we offer a range of investment options designed to help you achieve what you aspire. The long-term investment horizons and can allocate funds across a wide range of asset classes, including stocks, bonds, real estate, private equity, infrastructure projects, and alternative investments.</p>
-                  <p className={homeStyle.aboutContentInfo}>Whatever your goals, be it investment holding company, private equity, public market funds, debt investments or anything more, our portfolio is designed to provide you with the flexibility to choose from the best options for your convenience and feasibility. <span style={{ color: '#FFB13E' }}>Read More</span></p>
+                  <p className={homeStyle.aboutContentInfo}>
+                    Welcome to Spectra Global pvt Ltd, where our primary goal is to help clients grow and preserve their wealth while effectively managing their financial affairs.
+                  </p>
+                  <p className={homeStyle.aboutContentInfo}>
+                    Our financial prosperity is the cornerstone of your future success. With experience in the financial industry, our team of experts is dedicated to providing tailored financial solutions that align with your individual/institutional needs and goals.
+                  </p>
+                  <p className={homeStyle.aboutContentInfo}>
+                    At Spectra Global, our primary objective is to preserve and grow the wealth. we understand that each financial journey is unique, which is why we offer a range of investment options designed to help you achieve what you aspire. The long-term investment horizons and can allocate funds across a wide range of asset classes, including stocks, bonds, real estate, private equity, infrastructure projects, and alternative investments.
+                    <Link to='about-us'>
+                      <span style={{ color: '#FFB13E' }}>Read More</span>
+                    </Link>
+                  </p>
                 </div>
               </div>
             </div>
@@ -220,7 +214,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className={homeStyle.ourTeamSection}>
+        {/* <div className={homeStyle.ourTeamSection}>
           <div className={homeStyle.headerwrapper}>
             <p
               className={homeStyle.ourTeamHeading}
@@ -242,7 +236,6 @@ const Home = () => {
               Would you like to
               know more?
             </p>
-            {/* <img src={contectimg} alt='contectimg' /> */}
             <Link
               to='contact-us'
               className={homeStyle.ContectCircle}
@@ -253,7 +246,7 @@ const Home = () => {
               <h4 className={homeStyle.wouldcircle}>Contact</h4>
             </Link>
           </div>
-        </div>
+        </div> */}
       </div>
 
     </div>

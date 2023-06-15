@@ -46,7 +46,7 @@ const OurServices = () => {
         </div>
 
       </div>
-     
+
       <div className={ourStyle.assetsManagementSection}>
 
         <div className={ourStyle.assetsManagement}>
@@ -77,7 +77,9 @@ const OurServices = () => {
           <div className={`row ${ourStyle.fundManagementSection}`}>
             <div className={`col-md-6 ${ourStyle.fundManagementContentSection}`}>
               <h2 className={ourStyle.fundManagementHeading}>Investment Planning</h2>
-              <p className={ourStyle.fundManagementContent}>We work closely with our clients to create a customized investment plan that aligns with their objectives, risk tolerance, and time horizon.</p>
+              <p className={ourStyle.fundManagementContent}>
+                Investment planning is the process of setting financial goals, assessing your risk tolerance, creating a strategy, and implementing a plan to achieve those goals and We regularly review and revise your plan to ensure it remains aligned with your changing financial situation and objectives.
+              </p>
             </div>
             <div className={`col-md-6 ${ourStyle.fundManagementImg}`}>
               <img
@@ -102,7 +104,9 @@ const OurServices = () => {
             </div>
             <div className={`col-md-6 ${ourStyle.fundManagementContentSection}`}>
               <h2 className={ourStyle.fundManagementHeading}>Portfolio Management</h2>
-              <p className={ourStyle.fundManagementContent}>We use a disciplined and systematic approach to manage portfolios that maximizes alpha while minimizing risks.</p>
+              <p className={ourStyle.fundManagementContent}>
+                It's important to align your portfolio with your investment objectives, regularly monitor its performance, and make adjustments as needed to stay on track towards your financial goals.
+              </p>
             </div>
           </div>
         </div>
@@ -114,7 +118,9 @@ const OurServices = () => {
           <div className={`row ${ourStyle.fundManagementSection}`}>
             <div className={`col-md-6 ${ourStyle.fundManagementContentSection}`}>
               <h2 className={ourStyle.fundManagementHeading}>Asset Allocation</h2>
-              <p className={ourStyle.fundManagementContent}>We use a rigorous asset allocation process to ensure that our clients’ portfolios are diversified across multiple asset classes, including stocks, bonds, and alternative investments.</p>
+              <p className={ourStyle.fundManagementContent}>
+                Asset allocation is the strategic process of dividing an investment portfolio among different asset classes, such as stocks, bonds, cash, and alternative investments.
+              </p>
             </div>
             <div className={`col-md-6 ${ourStyle.fundManagementImg}`}>
               <img
@@ -139,7 +145,9 @@ const OurServices = () => {
             </div>
             <div className={`col-md-6 ${ourStyle.fundManagementContentSection}`}>
               <h2 className={ourStyle.fundManagementHeading}>Risk Management</h2>
-              <p className={ourStyle.fundManagementContent}>We employ a variety of risk management techniques to help mitigate downside risk and protect our clients’ portfolios in volatile market conditions.</p>
+              <p className={ourStyle.fundManagementContent}>
+                It involves understanding and managing both systematic risks (market-wide risks that affect all investments) and specific risks (risks specific to individual investments).
+              </p>
             </div>
           </div>
         </div>
@@ -151,7 +159,9 @@ const OurServices = () => {
           <div className={`row ${ourStyle.fundManagementSection}`}>
             <div className={`col-md-6 ${ourStyle.fundManagementContentSection}`}>
               <h2 className={ourStyle.fundManagementHeading}>Performance Reporting</h2>
-              <p className={ourStyle.fundManagementContent}>We provide regular performance reports that track portfolio performance against benchmarks and provide transparency into portfolio holdings and performance.</p>
+              <p className={ourStyle.fundManagementContent}>
+                Performance reporting in investment refers to the process of evaluating and communicating the performance of an investment portfolio over a specific period.
+              </p>
             </div>
             <div className={`col-md-6 ${ourStyle.fundManagementImg}`}>
               <img
@@ -176,7 +186,9 @@ const OurServices = () => {
             </div>
             <div className={`col-md-6 ${ourStyle.fundManagementContentSection}`}>
               <h2 className={ourStyle.fundManagementHeading}>Ongoing Monitoring and Rebalancing</h2>
-              <p className={ourStyle.fundManagementContent}>We continually monitor portfolio holdings and adjust allocations as necessary to ensure that portfolios remain aligned with clients’ investment objectives and risk profiles</p>
+              <p className={ourStyle.fundManagementContent}>
+                Ongoing monitoring and rebalancing are important components of portfolio management to ensure that the investment portfolio remains aligned with the desired asset allocation and investment objectives.
+              </p>
             </div>
           </div>
         </div>

@@ -2,7 +2,8 @@
     position: sticky;
     top: 0;
     z-index: 1;
-    background: #131516;
+    background: #010110;
+    // width: 100vw;
 
     .headerMainSection {
         width: 93vw;
@@ -10,8 +11,25 @@
         z-index: 1;
         padding: 1rem 0;
         margin-bottom: 1rem;
+        @media screen and (max-width: 768px) {
+            padding: 0.5rem 0;
+        }
 
+        .menubtn {
+            @media screen and (max-width: 768px) {
+                border: none;
+                padding: 0;
 
+                &:focus {
+                    box-shadow: none;
+                }
+
+                span {
+                    width: 1.5rem;
+                    background-image: url('../../../Assets/Img/menu.png');
+                }
+            }
+        }
 
         .navLink {
             color: #ffffff !important;
@@ -27,6 +45,10 @@
             .responsiveimg {
                 width: 15rem;
                 object-fit: cover;
+
+                @media screen and (max-width: 768px) {
+                    width: 12rem;
+                }
             }
         }
 
@@ -53,10 +75,51 @@
 
             .headerNavLink {
                 font-size: 1.2rem;
+
+                @media screen and (max-width: 768px) {
+                    font-size: 1rem;
+                }
             }
 
             .iconSection {
                 font-size: 1.6rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .offCanvasNavbar {
+        // background-color: #010110;
+        width: 66vw !important;
+        background: #320a41;
+        border-radius: 3rem 0 0 3rem;
+
+        .mobileMenuSection {
+            padding-bottom: 1rem;
+            // .mobileMenuLogo {
+            //     .responsiveimg {
+            //         width: 13rem;
+            //     }
+            // }
+
+            button {
+                background: transparent url('../../../Assets/Icons/close.svg') center/1em auto no-repeat;
+                opacity: 1;
+            }
+        }
+
+        .bodySection {
+
+            color: #fff;
+
+            .headerNavLink {
+                margin-bottom: 0.5rem;
+
+                .navLink {
+                    width: fit-content;
+                    padding-bottom: 0;
+                }
             }
         }
     }
