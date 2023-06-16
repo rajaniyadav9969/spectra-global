@@ -11,7 +11,6 @@ const AboutUs = () => {
                     data-aos="fade-down"
                     data-aos-delay="50"
                     data-aos-duration="500"
-
                 >
                     About Us</h1>
             </div>
@@ -56,7 +55,6 @@ const AboutUs = () => {
                     <div className={`row ${abStyle.whySpectraItemsSection}`}>
                         <div
                             className={`col-md-3 ${abStyle.whySpectraSingleItem}`}
-                            // style={{ borderRadius: " 2rem 2rem 0" }}
                             data-aos="fade-down"
                             data-aos-delay="0"
                         >
@@ -68,7 +66,6 @@ const AboutUs = () => {
                         </div>
                         <div
                             className={`col-md-3 ${abStyle.whySpectraSingleItem}`}
-                            // style={{ borderRadius: "2rem 0 2rem 2rem" }}
                             data-aos="fade-down"
                             data-aos-delay="100"
                         >
@@ -82,7 +79,6 @@ const AboutUs = () => {
                             className={`col-md-3 ${abStyle.whySpectraSingleItem}`}
                             data-aos="fade-down"
                             data-aos-delay="200"
-                        //  style={{ borderRadius: "2rem  2rem  2rem 0" }}
                         >
                             <img
                                 src={require(`../../../Assets/Icons/${aboutImgSection.about_risk_img}`)}
@@ -94,7 +90,6 @@ const AboutUs = () => {
                             className={`col-md-3 ${abStyle.whySpectraSingleItem}`}
                             data-aos="fade-down"
                             data-aos-delay="300"
-                        // style={{ borderRadius: " 2rem 2rem 0" }}
                         >
                             <img
                                 src={require(`../../../Assets/Icons/${aboutImgSection.about_teamWork_img}`)}
@@ -106,7 +101,6 @@ const AboutUs = () => {
                             className={`col-md-3 ${abStyle.whySpectraSingleItem}`}
                             data-aos="fade-down"
                             data-aos-delay="400"
-                        // style={{ borderRadius: "2rem 0 2rem 2rem" }}
                         >
                             <img
                                 src={require(`../../../Assets/Icons/${aboutImgSection.about_monitor_img}`)}
@@ -118,7 +112,6 @@ const AboutUs = () => {
                             className={`col-md-3 ${abStyle.whySpectraSingleItem}`}
                             data-aos="fade-down"
                             data-aos-delay="500"
-                        //  style={{ borderRadius: "2rem  2rem  2rem 0" }}
                         >
                             <img
                                 src={require(`../../../Assets/Icons/${aboutImgSection.about_publicService_img}`)}
@@ -128,7 +121,6 @@ const AboutUs = () => {
                         </div>
                         <div
                             className={`col-md-3 ${abStyle.whySpectraSingleItem}`}
-                            // style={{ borderRadius: " 2rem 2rem 0" }}
                             data-aos="fade-down"
                             data-aos-delay="600"
                         >
@@ -141,7 +133,6 @@ const AboutUs = () => {
                         <div className={`col-md-3  ${abStyle.whySpectraSingleItem}`}
                             data-aos="fade-down"
                             data-aos-delay="700"
-                        //  style={{ borderRadius: "2rem  2rem  2rem 0" }}
                         >
                             <img
                                 src={require(`../../../Assets/Icons/${aboutImgSection.about_hassleFree_img}`)}

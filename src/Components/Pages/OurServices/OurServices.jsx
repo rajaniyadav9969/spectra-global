@@ -1,6 +1,5 @@
 import React from 'react'
 import ourStyle from './OurServices.module.scss'
-
 import theme from '../../../JSON/theme_css.json'
 
 const OurServices = () => {
@@ -48,7 +47,6 @@ const OurServices = () => {
       </div>
 
       <div className={ourStyle.assetsManagementSection}>
-
         <div className={ourStyle.assetsManagement}>
           <div className={ourStyle.assetsManagementContent}>
             <h2

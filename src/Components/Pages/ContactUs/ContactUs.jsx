@@ -15,20 +15,6 @@ const ContactUs = () => {
 
   })
 
-  // const handlesubmit= async (event)=>{
-  //   event.preventDefault();
-  //   console.log("FormData",FormData);
-  //   try {
-  //     const response = await axios.post('https://formsubmit.co/ajax/6ebe6ad1f56c79c1224504d4c7825cb8', {
-  //       ...FormData
-  //     });
-  //     console.log(response.data); // Handle the response data
-  //     alert("submited",response.data)
-  //   } catch (error) {
-  //     console.error(error); // Handle any errors
-  //     alert("Failed To Submit",error)
-  //   }
-  // };
   const [status, setStatus] = useState("Send Message");
   const handlesubmit = async (e) => {
     e.preventDefault();
@@ -116,10 +102,6 @@ const ContactUs = () => {
                   required
                   InputLabelProps={{
                     style: {
-                      // textOverflow: 'ellipsis',
-                      // whiteSpace: 'nowrap',
-                      // overflow: 'hidden',
-                      // width: '100%',
                       color: 'white',
 
                     }
@@ -139,10 +121,10 @@ const ContactUs = () => {
                   required
                   InputLabelProps={{
                     style: {
-                      textOverflow: 'ellipsis',
-                      whiteSpace: 'nowrap',
-                      overflow: 'hidden',
-                      width: '100%',
+                      // textOverflow: 'ellipsis',
+                      // whiteSpace: 'nowrap',
+                      // overflow: 'hidden',
+                      // width: '100%',
                       color: 'white'
                     }
                   }}
@@ -162,10 +144,10 @@ const ContactUs = () => {
                   required
                   InputLabelProps={{
                     style: {
-                      textOverflow: 'ellipsis',
-                      whiteSpace: 'nowrap',
-                      overflow: 'hidden',
-                      width: '100%',
+                      // textOverflow: 'ellipsis',
+                      // whiteSpace: 'nowrap',
+                      // overflow: 'hidden',
+                      // width: '100%',
                       color: 'white',
                     }
                   }}
@@ -184,10 +166,10 @@ const ContactUs = () => {
                   fullWidth
                   InputLabelProps={{
                     style: {
-                      textOverflow: 'ellipsis',
-                      whiteSpace: 'nowrap',
-                      overflow: 'hidden',
-                      width: '100%',
+                      // textOverflow: 'ellipsis',
+                      // whiteSpace: 'nowrap',
+                      // overflow: 'hidden',
+                      // width: '100%',
                       color: 'white'
                     }
                   }}

@@ -20,7 +20,6 @@ const Footer = () => {
                             <img
                                 src={require(`../../../Assets/Icons/${imageSection.mainlogo}`)}
                                 alt="cosmiclogo"
-                            //   className={headerStyle.responsiveimg}
                             />
                         </Link>
                     </div>
@@ -92,7 +91,6 @@ const Footer = () => {
                         </span>
                     </div> */}
                 </div>
-
             </div>
             <div className={footerStyle.footerCopyright}>
                 <span>© Copyright-2023 Spectra Global Pvt Ltd All Rights Reserved.</span>
