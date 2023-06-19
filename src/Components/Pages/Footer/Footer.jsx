@@ -23,12 +23,12 @@ const Footer = () => {
                             />
                         </Link>
                     </div>
-                    <div className={footerStyle.footerInfo}>
+                    {/* <div className={footerStyle.footerInfo}>
                         <span className={footerStyle.icon}>
                             <ImLocation />
                         </span>
                         <p className={footerStyle.textContent}> Lorem ipsum dolor sit amet, consectey. </p>
-                    </div>
+                    </div> */}
                     {/* <div className={footerStyle.footerInfo}>
                         <span className={footerStyle.icon}>
                             <MdCall />
@@ -45,7 +45,7 @@ const Footer = () => {
                         <span className={footerStyle.icon}>
                             <MdOutlineMail />
                         </span>
-                        <p className={footerStyle.textContent}>enquiry@spectraglobal.com</p>
+                        <p className={footerStyle.textContent}>support@spectragloballtd.com</p>
                     </div>
 
                 </div>

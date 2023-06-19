@@ -58,22 +58,22 @@ const ContactUs = () => {
             data-aos-duration="2000"
             data-aos-delay="50"
           >
-            <div className={contactStyle.iconAndHeader}>
+            {/* <div className={contactStyle.iconAndHeader}>
               <ImLocation className={contactStyle.icon} />
               <div className={contactStyle.HeaderAndDescripton}>
                 <p className={contactStyle.ContentText} >SpectraGlobal Ltd, Level 1, xyz Tower, wall Street, abc,  Republic of xyz</p>
               </div>
-            </div>
-            <div className={contactStyle.iconAndHeader}>
+            </div> */}
+            {/* <div className={contactStyle.iconAndHeader}>
               <MdCall className={contactStyle.icon} />
               <div className={contactStyle.HeaderAndDescripton}>
                 <p className={contactStyle.ContentText} >+1234455651</p>
               </div>
-            </div>
+            </div> */}
             <div className={contactStyle.iconAndHeader}>
               <MdOutlineMail className={contactStyle.icon} />
               <div className={contactStyle.HeaderAndDescripton}>
-                <p className={contactStyle.ContentText} >support@spectragloballtd.com</p>
+                <p className={contactStyle.ContentText}>support@spectragloballtd.com</p>
               </div>
             </div>
           </div>
