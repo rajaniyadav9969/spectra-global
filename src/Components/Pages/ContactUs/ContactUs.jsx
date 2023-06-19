@@ -4,6 +4,7 @@ import { MdCall, MdOutlineMail } from 'react-icons/md'
 import { Button, Grid, TextField } from '@mui/material';
 import axios from 'axios';
 import contactStyle from "./ContactUs.module.scss";
+import { Link } from 'react-router-dom';
 
 const ContactUs = () => {
   const [FormData, setFormData] = useState({
@@ -73,7 +74,8 @@ const ContactUs = () => {
             <div className={contactStyle.iconAndHeader}>
               <MdOutlineMail className={contactStyle.icon} />
               <div className={contactStyle.HeaderAndDescripton}>
-                <p className={contactStyle.ContentText}>support@spectragloballtd.com</p>
+                <Link className={contactStyle.ContentText} to="mailto:support@spectragloballtd.com">support@spectragloballtd.com</Link>
+                {/* <p className={contactStyle.ContentText}>support@spectragloballtd.com</p> */}
               </div>
             </div>
           </div>

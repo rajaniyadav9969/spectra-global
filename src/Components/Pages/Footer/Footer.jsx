@@ -45,7 +45,8 @@ const Footer = () => {
                         <span className={footerStyle.icon}>
                             <MdOutlineMail />
                         </span>
-                        <p className={footerStyle.textContent}>support@spectragloballtd.com</p>
+                        <Link className={footerStyle.textContent} to="mailto:support@spectragloballtd.com">support@spectragloballtd.com</Link>
+                        {/* <p className={footerStyle.textContent}>support@spectragloballtd.com</p> */}
                     </div>
 
                 </div>
