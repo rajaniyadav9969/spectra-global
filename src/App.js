@@ -16,6 +16,13 @@ import ContactUs from './Components/Pages/ContactUs/ContactUs';
 import { ScrollToTop } from './Components/ScrollToTop';
 
 function App() {
+ useEffect(() => {
+    AOS.init({once: false});
+    setTimeout(()=>{
+      AOS.refresh();
+    }, 1500)
+  }, []);
+  
   var root = document.documentElement
   let gcs = getComputedStyle(root)
   let jsonKeyObj = themecss && Object?.keys(themecss)
@@ -31,15 +38,6 @@ function App() {
   useEffect(() => {
     mappedrootArry()
   }, [])
-
-
-
-  useEffect(() => {
-    AOS.init({once: false});
-    setTimeout(()=>{
-      AOS.refresh();
-    }, 1500)
-  }, []);
 
   return (
     <div className="App">
