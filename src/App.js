@@ -1,52 +1,59 @@
 import { useEffect } from 'react';
-import Home from './Components/HomeComp/Home';
-import NavBar from './Components/NavBar/NavBar';
-import FeatureComp from './Components/Features/FeatureComp';
-import Product from './Components/Product/Product';
-import CardDeal from './Components/CardDeal/CardDeal';
-import Client from './Components/Client/Client';
-import Footer from './Components/Footer/Footer';
-import "bootstrap/dist/css/bootstrap.min.css"
-import 'aos/dist/aos.css';
+import './App.css';
+import "bootstrap/dist/css/bootstrap.min.css";
+import themecss from './JSON/theme_css.json'
+import { Header } from './Components/Pages/Header';
+import { Route, Routes } from 'react-router-dom';
+import OurServices from './Components/Pages/OurServices/OurServices';
+import { Home } from './Components/Pages/Home';
+import { AboutUs } from './Components/Pages/AboutUs';
 import AOS from 'aos';
+import 'aos/dist/aos.css';
+import './CSS/Dynamic.scss';
+import { Footer } from './Components/Pages/Footer';
+import { OurTeam } from './Components/Pages/OurTeam';
+import ContactUs from './Components/Pages/ContactUs/ContactUs';
+import { ScrollToTop } from './Components/ScrollToTop';
 
 function App() {
-  useEffect(() => {
+ useEffect(() => {
     AOS.init({once: false});
     setTimeout(()=>{
       AOS.refresh();
-    }, 2000)
+    }, 1500)
   }, []);
+  
+  var root = document.documentElement
+  let gcs = getComputedStyle(root)
+  let jsonKeyObj = themecss && Object?.keys(themecss)
+  let mappedrootArry = () => {
+    jsonKeyObj?.map((elem, ind) => {
+      const elemval = themecss[elem]
+      const elemvalKeysArr = Object.keys(elemval)
+      return (elemvalKeysArr?.map((key, i) => {
+        return root.style.setProperty(`--${[key]}`, `${elemval[key]}`)
+      }))
+    })
+  }
+  useEffect(() => {
+    mappedrootArry()
+  }, [])
+
   return (
-    <div className="App " style={{}}>
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          // target="_blank"
-          // rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header> */}
-      <NavBar />
-      <Home />
-      <div className="containers">
-        <FeatureComp />
-        <Product/>
-        <CardDeal/>
-        <Client/>
-        <Footer/>
-      </div>
+    <div className="App">
+      <Header/>
+      <ScrollToTop>
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/about-us" element={<AboutUs/>}/>
+        <Route path="/our-services" element={<OurServices/>}/>
+        <Route path="/our-team" element={<OurTeam/>}/>
+        <Route path="/contact-us" element={<ContactUs/>}/>
+      </Routes>
+      </ScrollToTop>
+      <Footer/>
     </div>
   );
 }
 
 export default App;
-
-
-// https://github.com/adrianhajdin/project_hoobank/tree/main
